@@ -6,10 +6,8 @@
 
 
 import { createServer } from "http";
+import { app } from "../baseApplication/index.js"
 
-const app = (req, res) => {
-    res.end("server is Working \n")
-}
 createServer(app).listen(8000, () => {
     console.log("server is running");
 });
